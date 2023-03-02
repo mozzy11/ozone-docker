@@ -345,8 +345,8 @@ services:
         condition: service_started
       odoo:
         condition: service_started
-      senaite:
-        condition: service_started
+      # senaite:
+      #   condition: service_started
       
     ports:
     - "8083:8083"
