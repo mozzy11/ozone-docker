@@ -23,6 +23,9 @@ DOCKER_SERVER_VERSION_MAJOR=$(echo "$DOCKER_SERVER_VERSION"| cut -d'.' -f 1)
 DOCKER_SERVER_VERSION_MINOR=$(echo "$DOCKER_SERVER_VERSION"| cut -d'.' -f 2)
 DOCKER_SERVER_VERSION_BUILD=$(echo "$DOCKER_SERVER_VERSION"| cut -d'.' -f 3)
 
+copy ./openmrs/custom_modules/event-2.10.0.omod $DISTRO_PATH/openmrs_modules
+copy ./openmrs/custom_modules/labonfhir-1.2.1.omod $DISTRO_PATH/openmrs_modules
+
 if [ "${DOCKER_SERVER_VERSION_MAJOR}" -ge 20 ] && \
    [ "${DOCKER_SERVER_VERSION_MINOR}" -ge 10 ]  && \
    [ "${DOCKER_SERVER_VERSION_BUILD}" -ge 13 ]; then
