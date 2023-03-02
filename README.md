@@ -37,9 +37,10 @@ Ozone FOSS requires you to log into each component separately:
 |-------------------|--------------------------------|----------|----------|
 | OpenMRS 3         | http://localhost/openmrs/spa  | admin    | Admin123 |
 | OpenMRS Legacy UI | http://localhost/openmrs      | admin    | Admin123 |
-| SENAITE           | http://localhost:8081/senaite | admin    | password |
+| OpenELIS          | https://localhost:8443/OpenELIS-Global/  | admin    | adminADMIN! |
 | Odoo              | http://localhost:8069         | admin    | admin    |
 | Superset          | http://localhost:8088         | admin    | password |
+|OpenHIM            | https://localhost:3000/        |root@openhim.org | admin|
 
 :bulb: **Did you know?** Ozone Pro comes with single sign-on (SSO) and all its integration layer is secured with OAuth2.
 
